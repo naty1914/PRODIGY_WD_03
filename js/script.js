@@ -73,7 +73,7 @@ function winner() {
     }
  }
  if (win) {
-    statusText.textContent = `${currentPlayer}'s wins`;
+    statusText.textContent = `${currentPlayer} wins`;
     updatePlayerBoxes();
     running = false;
 
@@ -108,8 +108,8 @@ function restart() {
     
     updatePlayerBoxes(); 
    
-    playerXBox.classList.remove('box-1');
-    playerOBox.classList.remove('box-2');
+    playerXBox.classList.remove('box-1','draw');
+    playerOBox.classList.remove('box-2' ,'draw');
     running = true;
 
 
